@@ -20,10 +20,22 @@ END IF;
               p_n001    =>      R.UNIT_PRICE
         );
 
---- Delete Member 
+--- Delete Member  
+DECLARE
+
+        V_MAX_SQ_ID     NUMBER(12);
+
+Begin
+	
+ SELECT  MAX(SEQ_ID) ID INTO V_MAX_SQ_ID
+    FROM apex_collections
+    WHERE UPPER(COLLECTION_NAME) = 'collection_name' 
+    AND C001 = :P1_ITEM_ID  --- reference ID
+    ;
 
   apex_collection.delete_member
             (
                 p_collection_name => 'collection_name',
                 p_seq => V_MAX_SQ_ID
             );
+END;
