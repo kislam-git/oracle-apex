@@ -20,6 +20,14 @@ END IF;
               p_n001    =>      R.UNIT_PRICE
         );
 
+-- How to check records in collection 
+
+SELECT  COUNT(C001) ID INTO :P7_QUANTITY
+    FROM apex_collections
+    WHERE UPPER(COLLECTION_NAME) = 'collection_name' 
+    AND C001 = :P7_ITEM_ID
+    ;
+
 --- Delete Member  
 DECLARE
 
