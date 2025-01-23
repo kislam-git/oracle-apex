@@ -25,7 +25,7 @@ END IF;
 SELECT  COUNT(C001) ID INTO :P7_QUANTITY
     FROM apex_collections
     WHERE UPPER(COLLECTION_NAME) = 'collection_name' 
-    AND C001 = :P7_ITEM_ID
+    AND C001 = :P1_ITEM_ID
     ;
 
 --- Delete Member  
