@@ -1,0 +1,40 @@
+.IgTable .a-GV-row
+{
+    background-color: #b3d7ee;
+
+}
+
+ .a-GV-headerLabel {
+    white-space: normal;
+}
+
+
+.IgHeader .a-GV-table th.a-GV-header, .a-GV-table th.a-GV-headerGroup {
+    font-weight: 800;
+    background-color: gold;
+}
+
+
+.RegionBorder .t-Region, .t-Region-header {
+
+    border-color: darkgray;
+}
+
+.IgGroupHead .a-GV-headerGroup
+{
+    background-color: chartreuse;
+}
+
+/*
+.IgBorder .a-GV-footer, .a-GV-header, .a-GV-headerGroup, .a-GV-table .a-GV-cell, .a-IG-gridView .a-GV-footer, .a-Toolbar-group {
+    border-color: darkgray;
+}
+*/
+/* Pagination */
+
+.a-GV-pagination {
+    text-align: right;
+    line-height: 16px;
+    font-size: 18px;
+    font-weight: 800;
+}
