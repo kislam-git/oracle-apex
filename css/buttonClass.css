@@ -1,0 +1,22 @@
+class="t-Button t-Button--hot"
+
+class="t-Button t-Button--success"
+
+class="t-Button t-Button--danger"
+
+class="t-Button t-Button--warning"
+
+
+class="t-Button t-Button--success t-Button--stretch"
+
+
+class="t-Button t-Button--hot t-Button--simple t-Button--stretch"
+
+
+-- text with icon
+
+class="t-Button t-Button--icon t-Button--success t-Button--iconLeft"
+
+
+-- only icon
+title="My Button" class="t-Button t-Button--noLabel t-Button--icon"
